@@ -1,10 +1,12 @@
 * {
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 section#score {
@@ -32,22 +34,41 @@ section#score div {
   padding: 0.5em;
   background-color: rgba(211,211,211, 0.75);
   border: 1px solid lightgray;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
   border-radius: 1px;
+  -webkit-box-shadow: 1px 1px 5px 1px lightgray;
+  -moz-box-shadow: 1px 1px 5px 1px lightgray;
+  -ms-box-shadow: 1px 1px 5px 1px lightgray;
+  -o-box-shadow: 1px 1px 5px 1px lightgray;
   box-shadow: 1px 1px 5px 1px lightgray;
   margin: 1em auto;
 }
 
 
-
-
 .furry {
+  background-color: yellowgreen;
+  -webkit-background-image: url('../images/furry.png');
+  -moz-background-image: url('../images/furry.png');
+  -o-background-image: url('../images/furry.png');
   background-image: url('../images/furry.png');
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
+
 .coin {
+  background-color: palevioletred;
+  -webkit-background-image: url('../images/coin.png');
+  -moz-background-image: url('../images/coin.png');
+  -o-background-image: url('../images/coin.png');
   background-image: url('../images/coin.png');
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
