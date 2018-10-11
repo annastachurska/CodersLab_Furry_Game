@@ -47,7 +47,7 @@ section#score div {
 
 
 .furry {
-  background-color: yellowgreen;
+  background-color: transparent;
   -webkit-background-image: url('../images/furry.png');
   -moz-background-image: url('../images/furry.png');
   -o-background-image: url('../images/furry.png');
@@ -60,7 +60,7 @@ section#score div {
 }
 
 .coin {
-  background-color: palevioletred;
+  background-color: transparent;
   -webkit-background-image: url('../images/coin.png');
   -moz-background-image: url('../images/coin.png');
   -o-background-image: url('../images/coin.png');
