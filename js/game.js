@@ -30,7 +30,6 @@ var Game = function() {
 
     this.showCoin = function() {
         this.board[ this.index(this.coin.x,this.coin.y) ].classList.add('coin');
-        this.visible = document.querySelector(".coin");
         let number = Math.floor(Math.random()*this.originalCarTable.length);
         let link = `url('./images/${this.originalCarTable[number]}.png')`;
         document.querySelector(".coin").style.backgroundImage = link;
