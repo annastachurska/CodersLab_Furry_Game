@@ -1,7 +1,7 @@
-var	Coin = require("./coin.js");
-var	Furry = require("./furry.js");
+let	Coin = require("./coin.js");
+let	Furry = require("./furry.js");
 
-var Game = function() {
+let Game = function() {
     this.board = document.querySelectorAll("section#board div"),
     this.carTable = [];
     this.furry = new Furry(),
@@ -22,7 +22,7 @@ var Game = function() {
     },
 
     this.hideVisibleFurry = function() {
-        var currentFurry = document.querySelector(".furry");
+        let currentFurry = document.querySelector(".furry");
         if (currentFurry != null) {
             currentFurry.classList.remove("furry");
         }
@@ -73,7 +73,7 @@ var Game = function() {
             document.querySelector(".coin").style.backgroundImage = "";
             document.querySelector(".coin").classList.remove("coin");
             this.score += 1;
-            document.querySelector("section#score strong").innerText = this.score;
+            document.querySelector("#score strong").innerText = this.score;
             this.coin = new Coin();
             this.showCoin();
         }
@@ -83,8 +83,8 @@ var Game = function() {
         if ((this.furry.x < 0) || (this.furry.x > 9) || (this.furry.y < 0) || (this.furry.y > 9)) {
             clearInterval(this.idSetInterval);
             this.hideVisibleFurry();
-            var final = document.querySelector("section#score strong").innerText;
-            document.querySelector("section#score strong").innerText = "Game over: " + final;
+            let final = document.querySelector(".score_number").innerText;
+            document.querySelector(".score_number").innerText = "Game over: " + final;
             if (this.furry.x > 9) {this.furry.x = 9;}
             if (this.furry.y > 9) {this.furry.y = 9;}
             if (this.furry.x < 0) {this.furry.x = 0;}
@@ -109,7 +109,7 @@ var Game = function() {
     },
 
     this.startGame = function() {
-        var self = this;
+        let self = this;
         this.idSetInterval = setInterval(function() {
             self.moveFurry();
         }, 250);
