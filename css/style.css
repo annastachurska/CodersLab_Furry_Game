@@ -199,8 +199,8 @@
 }
 
 #board {
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   position: absolute;
   top: 20px;
   left: 50vw;
@@ -214,8 +214,8 @@
 #board  > div {    
   border: 1px solid black;
   float: left;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
 }
 #board:after {
   content: '';
