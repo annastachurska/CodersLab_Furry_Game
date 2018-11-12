@@ -68,14 +68,29 @@ let Game = function() {
         }
     },
 
+    this.turnFurryLeft = function() {
+        this.furry.direction = 'left';
+    },
+
+    this.turnFurryRight = function() {
+        this.furry.direction = 'right';
+    },
+    this.turnFurryTop = function() {
+        this.furry.direction = 'top';
+    },
+
+    this.turnFurryBottom = function() {
+        this.furry.direction = 'bottom';
+    },
+
     this.checkCoinCollision = function() {
-        if ((this.furry.x === this.coin.x) && (this.furry.y === this.coin.y)) {
-            document.querySelector(".coin").style.backgroundImage = "";
-            document.querySelector(".coin").classList.remove("coin");
-            this.score += 1;
-            document.querySelector("#score strong").innerText = this.score;
-            this.coin = new Coin();
-            this.showCoin();
+    if ((this.furry.x === this.coin.x) && (this.furry.y === this.coin.y)) {
+        document.querySelector(".coin").style.backgroundImage = "";
+        document.querySelector(".coin").classList.remove("coin");
+        this.score += 1;
+        document.querySelector("#score strong").innerText = this.score;
+        this.coin = new Coin();
+        this.showCoin();
         }
     },
 
